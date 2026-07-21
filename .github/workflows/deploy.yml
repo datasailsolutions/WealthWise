@@ -1,0 +1,28 @@
+name: Deploy demo site
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy over rsync
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.WWDEPLOY_SSH_KEY }}" > ~/.ssh/wwdeploy_key
+          chmod 600 ~/.ssh/wwdeploy_key
+          ssh-keyscan -H 44.251.48.128 >> ~/.ssh/known_hosts 2>/dev/null
+
+          rsync -avz --delete \
+            --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.gitignore' \
+            --exclude='README.md' \
+            -e "ssh -i ~/.ssh/wwdeploy_key -o StrictHostKeyChecking=yes" \
+            ./ wwdeploy@44.251.48.128:
