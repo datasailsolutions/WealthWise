@@ -82,12 +82,9 @@ header.site {
   font-size: 1.25rem;
   color: var(--navy);
 }
-.brand .mark {
-  width: 34px; height: 34px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-  display: flex; align-items: center; justify-content: center;
-  color: var(--navy); font-weight: 700; font-family: 'Inter', sans-serif; font-size: .9rem;
+.brand-logo {
+  height: 48px;
+  width: auto;
 }
 .nav-links {
   display: flex;
