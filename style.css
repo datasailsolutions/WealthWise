@@ -205,6 +205,12 @@ section { padding: 88px 0; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 32px 28px;
+  box-shadow: 0 1px 2px rgba(14,27,44,.04);
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+.card:hover {
+  box-shadow: 0 14px 32px rgba(14,27,44,.09);
+  transform: translateY(-3px);
 }
 .card .icon {
   width: 46px; height: 46px;
@@ -218,6 +224,49 @@ section { padding: 88px 0; }
 }
 .card h3 { font-size: 1.15rem; }
 .card p { margin-bottom: 0; font-size: .95rem; }
+
+/* Topic tiles (setquotes-style category browsing) */
+.topic-card { text-align: center; }
+.topic-card .icon { margin: 0 auto 18px; }
+.topic-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+.topic-card p { font-size: .9rem; margin-bottom: 18px; }
+.topic-card .btn { font-size: .82rem; padding: 10px 20px; }
+
+/* Responsive video embed (16:9) */
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--navy);
+}
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.video-embed.is-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+}
+.video-embed.is-placeholder .icon {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  background: rgba(250,247,240,.1);
+  border: 1px solid rgba(250,247,240,.25);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Fraunces', serif;
+  font-size: 1.8rem;
+  color: var(--gold);
+}
 
 .quote-block {
   border-left: 3px solid var(--gold);
