@@ -130,8 +130,8 @@ header.site {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: start;
-  text-align: left;
+  justify-items: center;
+  text-align: center;
   gap: 40px;
   align-items: center;
 }
@@ -155,7 +155,7 @@ header.site {
   font-size: 1.1rem;
   max-width: 46ch;
 }
-.hero-actions { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; justify-content: flex-start; }
+.hero-actions { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; justify-content: center; }
 
 .btn {
   display: inline-flex;
