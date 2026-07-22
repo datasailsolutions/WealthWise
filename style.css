@@ -157,7 +157,7 @@ header.site {
   font-size: 1.1rem;
   max-width: 46ch;
 }
-.hero-actions { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; justify-content: flex-start; }
+.hero-actions { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; justify-content: center; }
 
 .btn {
   display: inline-flex;
