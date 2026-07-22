@@ -330,6 +330,27 @@ section { padding: 88px 0; }
 }
 .placeholder-slot b { color: var(--navy); }
 
+/* Quotes grid (setquotes-style) */
+.quote-card { display: flex; flex-direction: column; }
+.quote-card .quote-tag {
+  display: inline-block;
+  color: var(--gold-dark);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.quote-card .quote-block { flex-grow: 1; font-size: 1.15rem; }
+.quote-card .quote-author {
+  font-size: .85rem;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 14px 0 18px;
+}
+.quote-card .btn { align-self: flex-start; font-size: .82rem; padding: 10px 20px; }
+.quote-card .btn.copied { background: var(--emerald); color: var(--cream); border-color: var(--emerald); }
+
 /* Team / people */
 .person {
   text-align: center;
