@@ -135,6 +135,7 @@ header.site {
   text-align: left;
   gap: 40px;
   align-items: center;
+  container-type: inline-size;
 }
 .eyebrow {
   display: inline-block;
@@ -147,7 +148,7 @@ header.site {
 }
 .hero h1 {
   color: var(--cream);
-  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  font-size: clamp(1.9rem, 4cqw, 3rem);
   margin-bottom: 32px;
 }
 .hero h1 em { color: var(--gold); font-style: normal; }
