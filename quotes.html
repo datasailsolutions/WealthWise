@@ -41,39 +41,31 @@
     <div class="grid-3">
       <div class="card quote-card" id="money-mindset" style="padding:0; overflow:hidden;">
         <img src="hqwealthwise.com1.png" alt="Never put off till tomorrow what you can do the day after tomorrow. — Mark Twain" style="width:100%; display:block;">
-        <div style="padding:20px 24px 24px;">
-          <button class="btn btn-navy btn-copy" type="button" data-quote="&quot;Never put off till tomorrow what you can do the day after tomorrow.&quot; — Mark Twain">Copy Quote</button>
-        </div>
       </div>
       <div class="card quote-card" id="wealth-coaching">
         <span class="quote-tag">Wealth Coaching</span>
         <blockquote class="quote-block">"Nobody drifts into a better relationship with money. You build it, one honest conversation at a time."</blockquote>
         <p class="quote-author">— HQ Wealth Wise Podcast</p>
-        <button class="btn btn-navy btn-copy" type="button" data-quote="&quot;Nobody drifts into a better relationship with money. You build it, one honest conversation at a time.&quot; — HQ Wealth Wise Podcast">Copy Quote</button>
       </div>
       <div class="card quote-card" id="discipline">
         <span class="quote-tag">Discipline</span>
         <blockquote class="quote-block">"Discipline is just a decision you already made, showing up again today."</blockquote>
         <p class="quote-author">— HQ Wealth Wise Podcast</p>
-        <button class="btn btn-navy btn-copy" type="button" data-quote="&quot;Discipline is just a decision you already made, showing up again today.&quot; — HQ Wealth Wise Podcast">Copy Quote</button>
       </div>
       <div class="card quote-card" id="growth">
         <span class="quote-tag">Growth</span>
         <blockquote class="quote-block">"You don't need a bigger plan. You need a smaller excuse."</blockquote>
         <p class="quote-author">— HQ Wealth Wise Podcast</p>
-        <button class="btn btn-navy btn-copy" type="button" data-quote="&quot;You don't need a bigger plan. You need a smaller excuse.&quot; — HQ Wealth Wise Podcast">Copy Quote</button>
       </div>
       <div class="card quote-card" id="confidence">
         <span class="quote-tag">Confidence</span>
         <blockquote class="quote-block">"Confidence isn't a feeling you wait for. It's a track record you build on purpose."</blockquote>
         <p class="quote-author">— HQ Wealth Wise Podcast</p>
-        <button class="btn btn-navy btn-copy" type="button" data-quote="&quot;Confidence isn't a feeling you wait for. It's a track record you build on purpose.&quot; — HQ Wealth Wise Podcast">Copy Quote</button>
       </div>
       <div class="card quote-card" id="financial-freedom">
         <span class="quote-tag">Financial Freedom</span>
         <blockquote class="quote-block">"Financial freedom isn't the number in your account. It's the peace in your decisions."</blockquote>
         <p class="quote-author">— HQ Wealth Wise Podcast</p>
-        <button class="btn btn-navy btn-copy" type="button" data-quote="&quot;Financial freedom isn't the number in your account. It's the peace in your decisions.&quot; — HQ Wealth Wise Podcast">Copy Quote</button>
       </div>
     </div>
     <div class="placeholder-slot" style="margin-top:26px;">
@@ -130,23 +122,6 @@
     </div>
   </div>
 </footer>
-
-<script>
-document.querySelectorAll('.btn-copy').forEach(function (btn) {
-  btn.addEventListener('click', function () {
-    var text = btn.getAttribute('data-quote');
-    navigator.clipboard.writeText(text).then(function () {
-      var original = btn.textContent;
-      btn.textContent = 'Copied!';
-      btn.classList.add('copied');
-      setTimeout(function () {
-        btn.textContent = original;
-        btn.classList.remove('copied');
-      }, 1800);
-    });
-  });
-});
-</script>
 
 </body>
 </html>
