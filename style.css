@@ -112,7 +112,7 @@ header.site {
 .hero {
   background: radial-gradient(circle at 80% 0%, #1c3350 0%, var(--navy) 55%);
   color: var(--cream);
-  padding: 100px 24px 110px;
+  padding: 100px 0 110px;
   position: relative;
   overflow: hidden;
 }
@@ -127,6 +127,7 @@ header.site {
 .hero-inner {
   max-width: var(--max);
   margin: 0 auto;
+  padding: 0 24px;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
