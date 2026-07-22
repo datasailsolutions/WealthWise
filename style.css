@@ -147,8 +147,8 @@ header.site {
 }
 .hero h1 {
   color: var(--cream);
-  font-size: clamp(2.2rem, 4.2vw, 3.4rem);
-  margin-bottom: .4em;
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  margin-bottom: 32px;
 }
 .hero h1 em { color: var(--gold); font-style: normal; }
 .hero p.lead {
